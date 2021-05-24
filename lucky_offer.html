@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+	<title>
+		OFFER
+	</title>
+	<link rel="shortcut icon" href="offer_favicon.ico">
+	<style>
+		.offer_image{transition:width 2s;transition-timing-function:ease;}
+		.offer_image:hover{width:500px;height:500px;}
+		
+		.first_div{width:120px;height:70px;background-image:linear-gradient(red,white);transition:width 2s;transition-timing-function:ease;}
+		.first_div:hover{width:500px;}
+		
+		.second_div{width:120px;height:70px;background-image:linear-gradient(red,white);transition:width 2s;transition-timing-function:ease;}
+		.second_div:hover{width:500px;}
+		
+		.bat_img{width:70px;
+				height:50px;
+				background-image:url(bat.jpg);
+				background-size:cover;
+				position:relative;
+				animation-name:bat;
+				animation-duration:10s;
+				animation-delay:5s;
+				animation-iteration-count:infinite;
+				position:absolute;
+				left:170px;
+				top:100px;}
+
+			@keyframes bat
+			{
+			0%{left:0px;top:0px;}
+			25%{left:250px;top:0px;}
+			50%{left:250px;top:250px;}
+			75%{left:0px;top:250px;}
+			100%{left:0px;top:0px}
+			}
+			
+			.bowl_img{width:60px;
+				height:40px;
+				background-image:url(bowl.jpg);
+				background-size:cover;
+				position:relative;
+				animation-name:bowl;
+				animation-duration:10s;
+				animation-delay:3s;
+				animation-iteration-count:infinite;}
+
+			@keyframes bowl
+			{
+			0%{left:0px;top:0px;}
+			25%{right:250px;top:0px;}
+			50%{left:250px;top:250px;}
+			75%{left:0px;top:250px;}
+			100%{left:0px;top:0px}
+			}
+			
+			
+	</style>
+</head>
+<body style="background-color:white;">
+<center><img  class="offer_image" src="offer_stamp.jpg" width="300px" height="300px"></img></center>
+<div style="text-align:center;"><h2><u><b>Terms & Conditions Apply:</b></u></h2></div>
+
+<div class="first_div">5% OFF:<br>On Combo Code:give_me_5<div class="bat_img"><div style="align:right;" class="bowl_img"></div></div></div><br>
+<br><br><br><br><br><br><div class="second_div">7% OFF:<br>On Combo Code:last_one_7</div><br>
+
+<p style="background-color:orange;position:bottom;" align=center><a href="ipl.html" title="blank">BACK TO HOME</a></p>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<html>
+<head>
+	<link rel="shortcut icon" href="lays.ico">
+<style>
+
+	body{
+		 background-image:url(lays_back.jpg);
+		 background-position:center;
+		 background-size:cover;
+		 font-family: 'Segoe UI', 'San Francisco', Calibri, Helvetica, Arial, sans-serif;
+		}
+		
+		#lays_name{position:center;}
+	input[type=button],input[type=reset],input[type=text]:focus
+	{
+		background-color:lightblue;
+		border:4px solid black;
+		color:white;
+		cursor:pointer;
+	}
+	
+	.heading{
+			text-align:center;
+			color:yellow;
+			text-decoration:oblique;
+			}
+			
+		  .name{
+				float:left;
+				width:210px;
+				height:75px;
+				padding:15px 20px;
+				margin:10px;
+				box-sizing:border-box;
+				border:2px solid black;
+				border-radius:3px;
+				background-color:yellow;
+				color:black;
+				}
+	
+		.seat_no{
+				float:right;
+				width:210px;
+				height:75px;
+				padding:15px 20px;
+				margin:10px;
+				box-sizing:border-box;
+				border:2px solid black;
+				border-radius:3px;
+				background-color:yellow;
+				color:black;
+				}
+				.consisting_name_seat_no{border:1px solid red;width:100%;height:92px;}
+				
+	.contains_Order_no_and_Bill{border:1px solid red;
+								width:100%;
+								height:300px;
+								margin:10px;}
+	.first_item{
+				margin:9px;
+				width:relative;
+				height:250px;
+				float:left;
+				background-image:url(first_item.jfif);
+				background-size:cover;
+				background-position:center;}
+				
+	.second_item{
+				margin:9px;
+				width:relative;
+				height:250px;
+				float:right;
+				background-image:url(second_item.jpeg);
+				background-size:cover;
+				background-position:center;
+				}
+				
+	.third_item{
+				margin:9px;
+				width:relative;
+				height:250px;
+				float:left;
+				background-image:url(third_item.jpg);
+				background-size:cover;
+				background-position:center;}
+				
+	.fourth_item{
+				margin:9px;
+				width:relative;
+				height:250px;
+				float:right;
+				background-image:url(fourth_item.jpg);
+				background-size:cover;
+				background-position:center;}
+				
+	.buttons{float:center;}
+				
+		  #bill{
+				float:right;
+				width:210px;
+				height:auto;
+				padding:15px 20px;
+				margin:10px;
+				box-sizing:border-box;
+				border:2px solid black;
+				border-radius:3px;
+				background-color:yellow;
+				color:black;
+				}
+				
+	.Order_no{
+				width:100%;
+				height:300px;
+				<!--padding:15px 20px;-->
+				margin:10px;
+				box-sizing:border-box;
+				border:2px solid black;
+				border-radius:3px;
+				background-color:yellow;
+				color:black;}
+				
+	.first_item .second_item .third_item:hover
+			{
+			box-shadow:0 0 20px 10px;
+			}
+			
+			.pagination{display:inline-block;position:relative;top:140px;}
+
+			.pagination a{color:black;
+					float:left;
+					text-decoration:none;
+					padding:8px 16px;
+					transition:background-color .3s;
+					border:1px solid black;
+					margin:5px 4px;
+					font-size:20px;
+					}
+
+			.pagination a.active{background-color:red;
+								color:black;}
+
+			.pagination a:hover:not(.active)
+			{background-color:lightgray;}
+
+			.pagination a:first-child
+			{border-top-left-radius:5px;
+			border-bottom-left-radius:5px;}
+
+			.pagination a:last-child
+			{border-top-right-radius:5px;
+			border-bottom-right-radius:5px;}
+</style>
+</head>
+<body>	
+		<div class="consisting_name_seat_no">
+		<div class="name">
+				Name:<input type="text" id="person_name" name="lays_name" placeholder="Enter Your Name">
+		</div>
+		<div class="seat_no">
+				Seat_no:<input type="text" id="seat" name="seat_no" placeholder="Enter Seat_no">
+		</div>
+		</div>
+		<div class="contains_Order_no_and_Bill">
+		<div class="Order_no">
+			Item_no:<input type="text" id="lays_name" name="lays_name" placeholder="Enter Item_no want to Order">
+			<div class="first_item">
+				Item_no:1111#
+			</div>
+					<div class="second_item">
+						Item_no:1112#
+					</div>
+							<div class="third_item">
+								Item_no:1113#
+							</div>
+									<div class="fourth_item">
+										Item_no:1114#
+									</div>
+									
+	<button class="buttons" onclick="Adding_to_Bill()" style="background-color:#998200;border:4px solid black;color:white;">Order</button>
+		<input class="buttons" style="background-color:#998200;" type="reset" value="Reset"/>
+				<div id="bill">
+						BILL:<br>
+				</div>
+		</div>
+		<script>
+				function Adding_to_Bill(){
+					var name_temp=document.getElementById("person_name").value;
+					var seat_temp=document.getElementById("seat").value;
+					var bill_temp=document.getElementById("bill");
+					bill_temp.innerHTML+=name_temp+" "+seat_temp;
+				}
+		</script>
+		<center><div class="pagination" style="position:center;">
+			<a href="./#NOP" onclick="return false" rel="noreferrer">&laquo</a>
+			<a class="active" href="lays.html">Lays</a>
+			<a href="pepsi.html">Pepsi</a>
+			<a href="ipl.php">Home</a>
+			<a href="pepsi.html">&raquo</a>
+		</div></center>
+</body>
+</html>

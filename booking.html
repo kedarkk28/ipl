@@ -1,0 +1,262 @@
+<html>
+<head>
+	<title>
+			BOOKING
+	</title>
+	
+	<style>
+		#A{font-size:31px;color:red;}
+		.stadium_image{
+						background-image:url(Stadium_IPL_Booking.png);
+						background-size:cover;
+						width:relative;
+						height:561px;
+						background-position:center;
+					  }
+					  
+	 .classForSeats{
+				display:none;
+				width:50px;
+				height:50px;
+		}
+		.first_div{	
+					position:relative;
+					top:119px;
+					height:auto;
+					float:left;
+					width:210px;
+					border:2px solid red;
+					text-align:center;}
+		
+		.second_div{
+					position:relative;
+					top:119px;
+					height:auto;
+					float:right;
+					width:320px;
+					border:2px solid red;
+					text-align:center;
+					font-weight:bold;
+					}
+					
+					
+					.seats_container{
+									display:flex;
+									text-align:center;
+									border:solid red 1px;
+								}
+				.seat{
+						width:20%;
+						border:solid black 2px;
+						padding:5px;
+						margin:auto;
+						font-family:Glyphs;
+						}
+				
+				.second_row{
+								border:solid red 1px;
+								display:flex;
+								text-align:center;
+							}
+				.seat_2{
+							border:solid black 2px;
+							width:25px;
+							height:25px;
+							padding:5px;
+							margin:auto;
+							}
+						
+				.third_row{
+						border:solid red 1px;
+						display:flex;
+						text-align:center;
+							}
+				.seat_3{
+							border:solid black 2px;
+							width:15%;
+							padding:5px;
+							margin:auto;
+							}
+						
+						
+						.fourth_row{
+								border:solid red 1px;
+								display:flex;
+								text-align:center;
+								}
+						.seat_4{
+								border:solid black 2px;
+							width:25px;
+							height:25px;
+							padding:5px;
+							margin:auto;
+								}
+								
+					.seat:hover, .seat_2:hover, .seat_3:hover, .seat_4:hover{
+									color:blue;
+									background:red;
+									border-radius:50% 50% 0 0;
+								}
+								
+					.three_no{
+									font-size:25px;
+									border:solid red 1px;
+									background-color:red;
+									color:white;
+									width:35px;
+									border-radius:50%;
+								}
+								
+					.payment_module{
+										text-align:center;
+										border:1px solid black;
+										width:40%;
+										border-radius:30%;
+										color:#e53935;
+										box-shadow:0px 20px 6px 15px;
+									}
+						
+		<script>
+			function radiusChange(){
+				
+			}
+		</script>
+		
+	</style>
+</head>
+<body>
+<div class="first_div"><fieldset style="margin:5px;border:2px solid blue;"><u><b>Steps to Follow:</b></u><br><br>
+			1.Select Section:S1-S6<br><img src="arrow.png" width="40px" height="40px"><br>
+			2.Select Quadrant:<br>U1-U2||L1-L2||M<br><img src="arrow.png" width="40px" height="40px"/><br>
+			3.Select Seat Row:<br><img src="arrow.png" width="40px" height="40px"><br>
+			4.Select Seat:<br><img src="arrow.png" width="40px" height="40px"><br>
+			5.Payment</fieldset></div>
+			<div class="second_div"><fieldset style="margin:5px;border:2px solid blue;">
+				<p id="A">A.<hr></p><img src="1.png" width="55px" height="55px"/><br>
+				<label for="Section">Select Section:<select name="Section" id="Section"required>
+					<option value="S1" >S1</option>
+					<option value="S2">S2</option>
+					<option value="S3">S3</option>
+					<option value="S4">S4</option>
+					<option value="S5">S5</option>
+					<option value="S6">S6</option>
+					<option value="S7">S7</option>
+				</select></label>
+				<br><br><img src="2.png" width="55px" height="55px"/><br>
+				<label for="Quadrant">Select Quadrant:<select name="Quadrant" id="Quadrant"required>
+					<option value="L1" >L1</option>
+					<option value="L2">L2</option>
+					<option value="U1">U1</option>
+					<option value="U2">U2</option>
+				</select></label>
+				<br><br><center><p class="three_no">3</p></center>
+				<label for="Seat_Row">Select Seat Row:<select name="Seat_Row" id="Seat_Row"required>
+					<option value="R_A" >R:A</option>
+					<option value="R_B">R:B</option>
+					<option value="R_C">R:C</option>
+					<option value="R_D">R:D</option>
+				</select></label>
+				</fieldset>
+			</div>
+<div class="stadium_image" style="position:center;">
+</div><br><br>
+<fieldset>
+		<legend align="center"><u><b>Select Seat</b></u></legend>
+			<div class="seats_container">
+		<div class="seat">R:A</div>
+		<div class="seat"><input type="checkbox"  class="classForSeats"   name="seats[]" value="1" onchange="radiusChange(this.checked)">1</div>
+		<div class="seat">2<input type="checkbox"  class="classForSeats"  name="seats[]" value="2"></div>
+		<div class="seat">3<input type="checkbox"  class="classForSeats"  name="seats[]" value="3"></div>
+		<div class="seat">4<input type="checkbox"  class="classForSeats"  name="seats[]" value="4"></div>
+		<div class="seat">5<input type="checkbox"  class="classForSeats"  name="seats[]" value="5"></div>
+		<div class="seat">6</div>
+		<div class="seat">7</div>
+		<div class="seat">8</div>
+		<div class="seat">9</div>
+		<div class="seat">10</div>
+		<div class="seat">11</div>
+		<div class="seat">12</div>
+		<div class="seat">13</div>
+		<div class="seat">14</div>
+		<div class="seat">15</div>
+		<div class="seat">16</div>
+		<div class="seat">17</div>
+		<div class="seat">18</div>
+		<div class="seat">19</div>
+		</div>
+		<br>
+		<div class="second_row">
+			<div class="seat_2">R:B</div>
+			<div class="seat_2">1</div>
+			<div class="seat_2">2</div>
+			<div class="seat_2">3</div>
+			<div class="seat_2">4</div>
+			<div class="seat_2">5</div>
+			<div class="seat_2">6</div>
+			<div class="seat_2">7</div>
+			<div class="seat_2">8</div>
+			<div class="seat_2">9</div>
+			<div class="seat_2">10</div>
+			<div class="seat_2">11</div>
+			<div class="seat_2">12</div>
+			<div class="seat_2">13</div>
+			<div class="seat_2">14</div>
+			<div class="seat_2">15</div>
+			<div class="seat_2">16</div>
+			<div class="seat_2">17</div>
+		</div>
+		<br>
+		<div class="third_row">
+			<div class="seat_3">R:C</div>
+			<div class="seat_3">1</div>
+			<div class="seat_3">2</div>
+			<div class="seat_3">3</div>
+			<div class="seat_3">4</div>
+			<div class="seat_3">5</div>
+			<div class="seat_3">6</div>
+			<div class="seat_3">7</div>
+			<div class="seat_3">8</div>
+			<div class="seat_3">9</div>
+			<div class="seat_3">10</div>
+			<div class="seat_3">11</div>
+			<div class="seat_3">12</div>
+			<div class="seat_3">13</div>
+			<div class="seat_3">14</div>
+			<div class="seat_3">15</div>
+			<div class="seat_3">16</div>
+			<div class="seat_3">17</div>
+			<div class="seat_3">18</div>
+			<div class="seat_3">19</div>
+		</div>
+		<br>
+		<div class="fourth_row">
+			<div class="seat_4">R:D</div>
+			<div class="seat_4">1</div>
+			<div class="seat_4">2</div>
+			<div class="seat_4">3</div>
+			<div class="seat_4">4</div>
+			<div class="seat_4">5</div>
+			<div class="seat_4">6</div>
+			<div class="seat_4">7</div>
+			<div class="seat_4">8</div>
+			<div class="seat_4">9</div>
+			<div class="seat_4">10</div>
+			<div class="seat_4">11</div>
+			<div class="seat_4">12</div>
+			<div class="seat_4">13</div>
+			<div class="seat_4">14</div>
+			<div class="seat_4">15</div>
+			<div class="seat_4">16</div>
+			<div class="seat_4">17</div>
+			
+		</div>
+			</fieldset>
+			<center><img src="Stadium_IPL_Booking.png"></img><br><br><br></center>
+			
+			<center><div class="payment_module">
+				<u><b><a href="payment.html">Proceed for Payment:</a></b></u>
+			</div>
+				</center>
+			
+</body>
+</html>

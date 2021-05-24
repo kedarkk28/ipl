@@ -1,0 +1,118 @@
+<html>
+<head>
+	<link rel="shortcut icon" href="pepsi.ico">
+	
+	<style>
+		.container{
+					float:right;
+					display:inline-grid;
+					grid-template-columns:auto auto auto;
+					background-color:#000080;
+					padding:10px;
+					grid-gap:13px;
+				}
+				
+		.pepsi_1{background-image:url(pepsi_p1.png);
+				background-position:center;
+				background-size:cover;
+				width:250px;
+				height:250px;}
+				
+		.pepsi_2{background-image:url(pepsi_p2.jpg);
+				background-position:center;
+				background-size:cover;
+				width:250px;
+				height:250px;}
+		
+		.pepsi_3{background-image:url(pepsi_p3.jfif);
+				background-position:center;
+				background-size:cover;
+				width:250px;
+				height:250px;}
+				
+		.pepsi_4{background-image:url(pepsi_p4.jpg);
+				background-position:center;
+				background-size:cover;
+				width:250px;
+				height:250px;}
+				
+		.pepsi_5{background-image:url(pepsi_p5.jfif);
+				background-position:center;
+				background-size:cover;
+				width:250px;
+				height:250px;}
+				
+		.pepsi_5{grid-row-start:1;
+				grif-row-end:3;}
+				
+		.pepsi_6{background-image:url(pepsi_p6.jpg);
+				background-position:center;
+				background-size:cover;
+				width:250px;
+				height:250px;}
+				
+		.pepsi_7{background-image:url(pepsi_p7.png);
+				background-position:center;
+				background-size:cover;
+				width:250px;
+				height:250px;}
+				
+		.pepsi_8{background-image:url(pepsi_p8.jfif);
+				background-position:center;
+				background-size:cover;
+				width:250px;
+				height:250px;}
+				
+		.pepsi_9{background-image:url(pepsi_p9.jfif);
+				background-position:center;
+				background-size:cover;
+				width:250px;
+				height:250px;}			
+
+.pagination{display:inline-block;a:center;}
+
+			.pagination a{color:black;
+					float:left;
+					text-decoration:none;
+					padding:8px 16px;
+					transition:background-color .3s;
+					border:1px solid black;
+					margin:5px 4px;
+					font-size:20px;}
+
+			.pagination a.active{background-color:red;
+								color:black;}
+
+			.pagination a:hover:not(.active)
+			{background-color:lightgray;}
+
+			.pagination a:first-child
+			{border-top-left-radius:5px;
+			border-bottom-left-radius:5px;}
+
+			.pagination a:last-child
+			{border-top-right-radius:5px;
+			border-bottom-right-radius:5px;}				
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="pepsi_1">@RS.119</div>
+		<div class="pepsi_2">@RS.70</div>
+		<div class="pepsi_3">@RS.89</div>
+		<div class="pepsi_4">@RS.99</div>
+		<div class="pepsi_5">@RS.101</div>
+		<div class="pepsi_6">@RS.70</div>
+		<div class="pepsi_7">@RS.69</div>
+		<div class="pepsi_8">@RS.96</div>
+		<div class="pepsi_9">@RS.209</div>
+	</div><p style="align:center;">These Items will be available @Stadium.</p>
+	<div class="pagination">
+			<a href="lays.html">&laquo</a>
+			<a href="lays.html">Lays</a>
+			<a class="active" href="pepsi.html">Pepsi</a>
+			<a href="./#NOP" onclick="return false" rel="noreferrer">&raquo</a>
+		</div>
+		
+</body>
+</html>

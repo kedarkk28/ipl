@@ -1,0 +1,14 @@
+.btn{
+    background-color: rgb(42, 70, 83);
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 25px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 00.4s;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
